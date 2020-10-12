@@ -9,16 +9,20 @@
             <thead>
                 <tr>
                     <td>#</td>
-                    <td>name</td>
-                    <td>email</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Rol</td>
+                    <td>Description</td>
                 </tr>
             </thead>
             
             <tbody>
-                  <tr v-for="{ id, name, email } in users.data" :key="id">
+                  <tr v-for="{ id, name, email, rol, description } in users.data" :key="id">
                     <td>{{ id }}</td>
                     <td>{{ name }}</td>
                     <td>{{ email }}</td>
+                    <td>{{ rol }}</td>
+                    <td>{{ description }}</td>
                 </tr>
             </tbody>          
         </table>

@@ -2041,6 +2041,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2206,6 +2208,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -20828,14 +20834,17 @@ var render = function() {
               "tbody",
               _vm._l(_vm.users.data, function(ref) {
                 var id = ref.id
+                var rol = ref.rol
+                var description = ref.description
                 var name = ref.name
-                var email = ref.email
                 return _c("tr", { key: id }, [
                   _c("td", [_vm._v(_vm._s(id))]),
                   _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(name))]),
+                  _c("td", [_vm._v(_vm._s(rol))]),
                   _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(email))])
+                  _c("td", [_vm._v(_vm._s(description))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(name))])
                 ])
               }),
               0
@@ -20897,9 +20906,11 @@ var staticRenderFns = [
       _c("tr", [
         _c("td", [_vm._v("#")]),
         _vm._v(" "),
-        _c("td", [_vm._v("name")]),
+        _c("td", [_vm._v("Rol")]),
         _vm._v(" "),
-        _c("td", [_vm._v("email")])
+        _c("td", [_vm._v("Description")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("Name")])
       ])
     ])
   }
@@ -21010,9 +21021,9 @@ var staticRenderFns = [
       _c("tr", [
         _c("td", [_vm._v("#")]),
         _vm._v(" "),
-        _c("td", [_vm._v("name")]),
+        _c("td", [_vm._v("Name")]),
         _vm._v(" "),
-        _c("td", [_vm._v("email")])
+        _c("td", [_vm._v("Email")])
       ])
     ])
   }
@@ -21056,12 +21067,18 @@ var render = function() {
                 var id = ref.id
                 var name = ref.name
                 var email = ref.email
+                var rol = ref.rol
+                var description = ref.description
                 return _c("tr", { key: id }, [
                   _c("td", [_vm._v(_vm._s(id))]),
                   _vm._v(" "),
                   _c("td", [_vm._v(_vm._s(name))]),
                   _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(email))])
+                  _c("td", [_vm._v(_vm._s(email))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(rol))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(description))])
                 ])
               }),
               0
@@ -21123,9 +21140,13 @@ var staticRenderFns = [
       _c("tr", [
         _c("td", [_vm._v("#")]),
         _vm._v(" "),
-        _c("td", [_vm._v("name")]),
+        _c("td", [_vm._v("Name")]),
         _vm._v(" "),
-        _c("td", [_vm._v("email")])
+        _c("td", [_vm._v("Email")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("Rol")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("Description")])
       ])
     ])
   }

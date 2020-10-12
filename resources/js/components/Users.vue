@@ -9,8 +9,8 @@
             <thead>
                 <tr>
                     <td>#</td>
-                    <td>name</td>
-                    <td>email</td>
+                    <td>Name</td>
+                    <td>Email</td>
                 </tr>
             </thead>
             
